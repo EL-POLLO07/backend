@@ -1,12 +1,202 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sergio\\source\\repos\\Back\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\saula\\source\\repos\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|c:\\users\\saula\\source\\repos\\backend\\back\\models\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|solutionrelative:back\\models\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|c:\\users\\saula\\source\\repos\\backend\\back\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|solutionrelative:back\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|c:\\users\\saula\\source\\repos\\backend\\back\\models\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|solutionrelative:back\\models\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|c:\\users\\saula\\source\\repos\\backend\\back\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|solutionrelative:back\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|c:\\users\\saula\\source\\repos\\backend\\back\\models\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|solutionrelative:back\\models\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|c:\\users\\saula\\source\\repos\\backend\\back\\models\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|solutionrelative:back\\models\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|c:\\users\\saula\\source\\repos\\backend\\back\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|solutionrelative:back\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|c:\\users\\saula\\source\\repos\\backend\\back\\models\\pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|solutionrelative:back\\models\\pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|c:\\users\\saula\\source\\repos\\backend\\back\\models\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|solutionrelative:back\\models\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|c:\\users\\saula\\source\\repos\\backend\\back\\back.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AC068E44-589F-4688-BBE5-05E1A133B2E6}|Back\\Back.csproj|solutionrelative:back\\back.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Pagos.cs",
+              "DocumentMoniker": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Pagos.cs",
+              "RelativeDocumentMoniker": "Back\\Models\\Pagos.cs",
+              "ToolTip": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Pagos.cs",
+              "RelativeToolTip": "Back\\Models\\Pagos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T00:57:13.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Inventario.cs",
+              "DocumentMoniker": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Inventario.cs",
+              "RelativeDocumentMoniker": "Back\\Models\\Inventario.cs",
+              "ToolTip": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Inventario.cs",
+              "RelativeToolTip": "Back\\Models\\Inventario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T00:55:50.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DetalleVenta.cs",
+              "DocumentMoniker": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\DetalleVenta.cs",
+              "RelativeDocumentMoniker": "Back\\Models\\DetalleVenta.cs",
+              "ToolTip": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\DetalleVenta.cs",
+              "RelativeToolTip": "Back\\Models\\DetalleVenta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T00:54:35.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ventas.cs",
+              "DocumentMoniker": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Ventas.cs",
+              "RelativeDocumentMoniker": "Back\\Models\\Ventas.cs",
+              "ToolTip": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Ventas.cs",
+              "RelativeToolTip": "Back\\Models\\Ventas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T00:51:14.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Productos.cs",
+              "DocumentMoniker": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Productos.cs",
+              "RelativeDocumentMoniker": "Back\\Models\\Productos.cs",
+              "ToolTip": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Productos.cs",
+              "RelativeToolTip": "Back\\Models\\Productos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T00:48:54.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Proveedores.cs",
+              "DocumentMoniker": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Proveedores.cs",
+              "RelativeDocumentMoniker": "Back\\Models\\Proveedores.cs",
+              "ToolTip": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Proveedores.cs",
+              "RelativeToolTip": "Back\\Models\\Proveedores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T00:45:31.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Categorias.cs",
+              "DocumentMoniker": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Categorias.cs",
+              "RelativeDocumentMoniker": "Back\\Models\\Categorias.cs",
+              "ToolTip": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Categorias.cs",
+              "RelativeToolTip": "Back\\Models\\Categorias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T00:44:20.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Empleados.cs",
+              "RelativeDocumentMoniker": "Back\\Models\\Empleados.cs",
+              "ToolTip": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Empleados.cs",
+              "RelativeToolTip": "Back\\Models\\Empleados.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T00:42:00.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Clientes.cs",
+              "RelativeDocumentMoniker": "Back\\Models\\Clientes.cs",
+              "ToolTip": "C:\\Users\\saula\\source\\repos\\backend\\Back\\Models\\Clientes.cs",
+              "RelativeToolTip": "Back\\Models\\Clientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T00:34:25.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Back",
+              "DocumentMoniker": "C:\\Users\\saula\\Source\\Repos\\backend\\Back\\Back.csproj",
+              "RelativeDocumentMoniker": "Back\\Back.csproj",
+              "ToolTip": "C:\\Users\\saula\\Source\\Repos\\backend\\Back\\Back.csproj",
+              "RelativeToolTip": "Back\\Back.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-11T00:19:12.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
