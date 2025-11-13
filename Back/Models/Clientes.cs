@@ -6,6 +6,7 @@
         public string Nombre { get; set; }
         public string Telefono { get; set; }
         public string Correo { get; set; }
+        public ICollection<Ventas> IdVenta { get; set; }
 
     }
 }
