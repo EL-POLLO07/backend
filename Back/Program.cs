@@ -1,3 +1,6 @@
+using Back.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace Back
 {
     public class Program
@@ -9,7 +12,10 @@ namespace Back
             // Add services to the container.
 
             builder.Services.AddControllers();
-
+            builder.Services.AddDbContext<PvmContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("PvmContext"));
+            });
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
