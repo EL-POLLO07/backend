@@ -1,9 +1,11 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.ComponentModel.DataAnnotations;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Back.Models//SERGIO RODRIGUEZ MENDOZA
 {
     public class Inventario
     {
+        [Key]
         public int IdMovimiento { get; set; }
         public int IdProducto { get; set; }
         public Productos Producto { get; set; }

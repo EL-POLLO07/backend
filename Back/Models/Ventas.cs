@@ -1,7 +1,10 @@
-﻿namespace Back.Models //SERGIO RODRIGUEZ MENDOZA
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Back.Models //SERGIO RODRIGUEZ MENDOZA
 {
     public class Ventas
     {
+        [Key]
         public int IdVenta { get; set; }
         public int IdCliente { get; set; }
         public Clientes Cliente { get; set; }
