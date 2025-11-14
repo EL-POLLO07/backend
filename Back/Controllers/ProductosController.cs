@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Back.Controllers
 {
+    //Sergio Rodríguez Mendoza
     [ApiController]
     [Route("api/[controller]")]
     public class ProductosController : ControllerBase
