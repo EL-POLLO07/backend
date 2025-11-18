@@ -8,7 +8,7 @@ namespace Back.Data
         public PvmContext(DbContextOptions<PvmContext> options) : base(options)
         {
         }
-        public DbSet<Clientes> Clientes { get; set; }   
+        public DbSet<Clientes> clientes { get; set; }   
         public DbSet<Categorias> Categorias { get; set; }
         public DbSet<DetalleVenta> Detalle { get; set; }
         public DbSet<Empleados> empleados { get; set; }
@@ -25,6 +25,16 @@ namespace Back.Data
         {
             modelBuilder.Entity<Productos>().HasOne(p => p.Categoria).WithMany(c=>c.productos).HasForeignKey(p => p.IdCategoria);
             modelBuilder.Entity<Productos>().HasOne(p => p.Proveedor).WithMany(pr=>pr.productos).HasForeignKey(p=> p.IdCategoria);
+
+            modelBuilder.Entity<Ventas>().HasOne(v=> v.Cliente).WithMany(cl=> cl.Ventas).HasForeignKey(v=> v.IdCliente);
+            modelBuilder.Entity<Ventas>().HasOne(v=> v.Empleado).WithMany(em=> em.Ventas).HasForeignKey(v=> v.IdEmpleado);
+
+            modelBuilder.Entity<DetalleVenta>().HasOne(dv => dv.Venta).WithMany(v => v.DetallesVentas).HasForeignKey(dv => dv.IdVenta);
+            modelBuilder.Entity<DetalleVenta>().HasOne(dv => dv.Producto).WithMany(p => p.DetallesVenta).HasForeignKey(dv => dv.IdProducto);
+
+            modelBuilder.Entity<Inventario>().HasOne(i => i.Producto).WithMany(p => p.Inventarios).HasForeignKey(i => i.IdProducto);
+
+            modelBuilder.Entity<Pagos>().HasOne(p => p.Venta).WithMany(v => v.Pago).HasForeignKey(p => p.IdVenta);
         }
       
     }

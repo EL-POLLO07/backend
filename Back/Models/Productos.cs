@@ -5,11 +5,11 @@ namespace Back.Models//SERGIO RODRIGUEZ MENDOZA
 {
     public class Productos
     {
+
         [Key]
         public int IdProducto { get; set; }
         [ForeignKey("Categorias")]
         public int IdCategoria { get; set; }
-        
         public Categorias? Categoria { get; set; }
         [ForeignKey("Proveedores")]
         public int IdProveedor { get; set; }
@@ -19,5 +19,6 @@ namespace Back.Models//SERGIO RODRIGUEZ MENDOZA
         public int Stock { get; set; }
         public ICollection<Inventario>? Inventarios { get; set; }
         public ICollection<DetalleVenta>? DetallesVenta { get; set; }
+
     }
 }

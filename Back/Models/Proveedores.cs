@@ -10,6 +10,6 @@ namespace Back.Models//SAUL ANDRE ALVARADO ESPARZA
         public string Telefono { get; set; }
         public string Correo { get; set; }
         public string Direccion { get; set; }
-        public ICollection<Productos> productos { get; set; }
+        public ICollection<Productos>? productos { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Back.Data;
+﻿    using Back.Data;
 using Back.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -43,7 +43,7 @@ namespace Back.Controllers
         public async Task<IActionResult> Put(int id, Productos productos)
         {
             if(id != productos.IdProducto)
-                return BadRequest();
+                return BadRequest();    
 
             _context.Entry(productos).State = EntityState.Modified;
             await _context.SaveChangesAsync();
