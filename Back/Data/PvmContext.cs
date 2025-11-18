@@ -17,6 +17,7 @@ namespace Back.Data
         public DbSet<Productos> productos { get; set; }
         public DbSet<Proveedores> proveedores { get; set; }
         public DbSet<Ventas> ventas { get; set; }
+        public DbSet<Usuarios> usuarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlServer("Server=DESKTOP-EL6M7BM\\SQLEXPRESS; Database= Base_de_datos; Trusted_Connection = True; User= sa; Password=; TrustServerCertificate= True ");
 
@@ -35,6 +36,8 @@ namespace Back.Data
             modelBuilder.Entity<Inventario>().HasOne(i => i.Producto).WithMany(p => p.Inventarios).HasForeignKey(i => i.IdProducto);
 
             modelBuilder.Entity<Pagos>().HasOne(p => p.Venta).WithMany(v => v.Pago).HasForeignKey(p => p.IdVenta);
+
+            modelBuilder.Entity<Usuarios>().HasOne(u => u.Empleado).WithMany(e => e.Usuarios).HasForeignKey(u => u.IdUsuario);
         }
       
     }
