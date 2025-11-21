@@ -22,11 +22,7 @@ namespace Back.Controllers
             var password_hashed = PasswordHasher.Hash(req.Contrasena);
             if (usuario.ContraseñaHash != password_hashed)
                 return BadRequest("Contraseña incorrecta");
-            return Ok(new
-            {
-                message = "Login exitoso",
-                rol = usuario.Rol
-            });
+            return Ok();
         }
 
     }
