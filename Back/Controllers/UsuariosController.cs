@@ -1,5 +1,6 @@
 ﻿using Back.Data;
 using Back.Models;
+using Back.Utils;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,6 +29,7 @@ namespace Back.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(Usuarios usuarios)
         {
+            usuarios.ContraseñaHash = PasswordHasher.Hash(usuarios.ContraseñaHash);
             _context.usuarios.Add(usuarios);
             await _context.SaveChangesAsync();
             return Ok(usuarios);

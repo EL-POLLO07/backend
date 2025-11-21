@@ -19,7 +19,7 @@ namespace Back.Data
         public DbSet<Ventas> ventas { get; set; }
         public DbSet<Usuarios> usuarios { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlServer("Server=DESKTOP-EL6M7BM\\SQLEXPRESS; Database= Base_de_datos; Trusted_Connection = True; User= sa; Password=; TrustServerCertificate= True ");
+        protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlServer("Server=DESKTOP-EL6M7BM\\SQLEXPRESS; Database= Base_de_datos; Trusted_Connection = True; User= sa; Password=Pejetronix420$; TrustServerCertificate= True ");
 
         //Sergio Rodríguez Mendoza
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -37,7 +37,7 @@ namespace Back.Data
 
             modelBuilder.Entity<Pagos>().HasOne(p => p.Venta).WithMany(v => v.Pago).HasForeignKey(p => p.IdVenta);
 
-            modelBuilder.Entity<Usuarios>().HasOne(u => u.Empleado).WithMany(e => e.Usuarios).HasForeignKey(u => u.IdUsuario);
+            modelBuilder.Entity<Usuarios>().HasOne(u => u.Empleado).WithMany(e => e.Usuarios).HasForeignKey(u => u.IdEmpleado);
         }
       
     }
