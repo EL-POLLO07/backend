@@ -1,4 +1,5 @@
 using Back.Data;
+using Back.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace Back
@@ -10,18 +11,20 @@ namespace Back
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
+
             builder.Services.AddDbContext<PvmContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("PvmContext"));
             });
+
+            // Add ordering services
+            builder.Services.AddScoped<IPedidosService, PedidosService>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-
             app.UseAuthorization();
-
 
             app.MapControllers();
 
