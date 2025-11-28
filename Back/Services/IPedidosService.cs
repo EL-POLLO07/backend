@@ -5,6 +5,6 @@ namespace Back.Services
 {
     public interface IPedidosService
     {
-        Task<object> CrearPedido(CrearPedidoDto dto);
+        Task<int> CrearPedido(CrearPedidoDto dto);
     }
 }
