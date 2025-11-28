@@ -22,5 +22,12 @@ namespace Back.Controllers
             var resultado = await _service.CrearPedido(dto);
             return Ok(resultado);
         }
+        [HttpPut("{id}/recoleccion")]
+        public async Task<IActionResult> MarcarRecoleccion(int id, [FromBody] ConfirmarRecoleccionDto dto)
+        {
+            var resultado = await _service.MarcarRecoleccion(id, dto);
+
+            return Ok(resultado);
+        }
     }
 }
