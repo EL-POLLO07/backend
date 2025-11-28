@@ -49,8 +49,25 @@ namespace Back.Services
                 decimal precio = producto.Precio;
 
                 decimal subtotal = precio * det.Cantidad;
+                totalVenta += subtotal;
+
+                var detalle = new DetalleVenta
+                {
+                    IdVenta = venta.IdVenta,
+                    IdProducto = det.IdProducto,
+                    Cantidad = det.Cantidad,
+                    Subtotal = subtotal
+                };
+                _context.Detalle.Add(detalle);
+
+                inventario.Cantidad -= det.Cantidad;
                     
             }
+            venta.Total = totalVenta;
+            await _context.SaveChangesAsync();
+
+            return venta.IdVenta;
+
         
         }
 
