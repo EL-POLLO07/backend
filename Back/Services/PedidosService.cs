@@ -70,7 +70,7 @@ namespace Back.Services
         }
 
         //Sergio Rodríguez Mendoza
-        public async Task RegistrarPago(CrearPagoDto dto)
+        public async Task RegistrarPago(RegistrarPagoDto dto)
         {
             var venta = await _context.ventas.FindAsync(dto.IdVenta);
             if (venta == null)

@@ -12,6 +12,6 @@ namespace Back.Services
         //Saul Alvarado//
         Task<bool> ConfirmarEntrega(int id);
         //Sergio Rodríguez Mendoza
-        Task RegistrarPago(CrearPagoDto dto);
+        Task RegistrarPago(RegistrarPagoDto dto);
     }
 }

@@ -29,5 +29,18 @@ namespace Back.Controllers
 
             return Ok(resultado);
         }
+        [HttpPost]
+        public async Task<IActionResult> RegistrarPago([FromBody] RegistrarPagoDto dto)
+        {
+            var resultado = await _service.RegistrarPago(dto);
+            return Ok(resultado);
+        }
+        [HttpPut("{id}/entregas")]
+        public async Task<IActionResult> Entregado(int id, [FromBody] EntregadoDto dto)
+        {
+            var resultado = await _service.Entregado(id, dto);
+
+            return Ok(resultado);
+        }
     }
 }
