@@ -4,7 +4,7 @@ namespace Back.DTOs
     public class CrearPedidoDto
     {
         public int IdCliente { get; set; }
-        public List<PedidoDetalleDto> Detalles { get; set; }
+        public List<PedidoDetalleDto>? Detalles { get; set; }
     }
 
     public class PedidoDetalleDto
