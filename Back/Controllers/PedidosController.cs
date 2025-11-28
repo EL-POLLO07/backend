@@ -23,9 +23,9 @@ namespace Back.Controllers
             return Ok(resultado);
         }
         [HttpPut("{id}/recoleccion")]
-        public async Task<IActionResult> MarcarRecoleccion(int id, [FromBody] ConfirmarRecoleccionDto dto)
+        public async Task<IActionResult> ConfirmarRecoleccion(int id, [FromBody] ConfirmarRecoleccionDto dto)
         {
-            var resultado = await _service.MarcarRecoleccion(id, dto);
+            var resultado = await _service.ConfirmarRecoleccion(id, dto);
 
             return Ok(resultado);
         }

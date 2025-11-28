@@ -8,7 +8,7 @@ namespace Back.Services
         //Sergio Rodríguez Mendoza
         Task<int> CrearPedido(CrearPedidoDto dto);
         //Saul Alvarado//
-        Task<bool> MarcarRecoleccion(int id);
+        Task<bool> ConfirmarRecoleccion(int id, ConfirmarRecoleccionDto dto);
         //Saul Alvarado//
         Task<bool> ConfirmarEntrega(int id);
         //Sergio Rodríguez Mendoza

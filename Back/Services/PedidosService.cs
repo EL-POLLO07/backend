@@ -90,7 +90,7 @@ namespace Back.Services
 
 
         //Saul Alvarado//
-        public async Task<bool> MarcarRecoleccion(int id)
+        public async Task<bool> ConfirmarRecoleccion(int id)
         {
             var venta = await _context.ventas.FindAsync(id);
 
