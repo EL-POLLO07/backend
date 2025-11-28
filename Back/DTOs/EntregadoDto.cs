@@ -2,6 +2,6 @@
 {
     public class EntregadoDto
     {
-        public bool Entragado { get; set; }
+        public bool Entregado { get; set; }
     }
 }

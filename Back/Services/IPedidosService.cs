@@ -10,8 +10,8 @@ namespace Back.Services
         //Saul Alvarado//
         Task<bool> ConfirmarRecoleccion(int id, ConfirmarRecoleccionDto dto);
         //Saul Alvarado//
-        Task<bool> ConfirmarEntrega(int id);
+        Task<bool> ConfirmarEntrega(int id,EntregadoDto dto);
         //Sergio Rodríguez Mendoza
-        Task RegistrarPago(RegistrarPagoDto dto);
+        Task RegistrarPago(RegistrarPagoDTO dto);
     }
 }

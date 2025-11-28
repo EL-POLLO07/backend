@@ -70,7 +70,7 @@ namespace Back.Services
         }
 
         //Sergio Rodríguez Mendoza
-        public async Task RegistrarPago(RegistrarPagoDto dto)
+        public async Task RegistrarPago(RegistrarPagoDTO dto)
         {
             var venta = await _context.ventas.FindAsync(dto.IdVenta);
             if (venta == null)
@@ -90,7 +90,7 @@ namespace Back.Services
 
 
         //Saul Alvarado//
-        public async Task<bool> ConfirmarRecoleccion(int id)
+        public async Task<bool> ConfirmarRecoleccion(int id, ConfirmarRecoleccionDto dto)
         {
             var venta = await _context.ventas.FindAsync(id);
 
@@ -106,7 +106,7 @@ namespace Back.Services
         }
 
         //Saul Alvarado//
-        public async Task<bool> ConfirmarEntrega(int id)
+        public async Task<bool> ConfirmarEntrega(int id,EntregadoDto dto)
         {
             var venta = await _context.ventas.FindAsync(id);
             if (venta == null)

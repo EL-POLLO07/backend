@@ -26,6 +26,9 @@ namespace Back.Controllers
             var pago = await _context.pagos.FindAsync(id);
             return pago == null ? NotFound() : Ok(pago);
         }
+
+
+        /*
         [HttpPost]
         public async Task<IActionResult>Post(Pagos pagos)
         {
@@ -33,6 +36,7 @@ namespace Back.Controllers
             await _context.SaveChangesAsync();
             return Ok(pagos);
         }
+        */
         [HttpPut("{id}")]
         public async Task<IActionResult>Put(int id, Pagos pagos)
         {
