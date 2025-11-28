@@ -13,6 +13,7 @@ namespace Back.Services
         {
             _context = context;
         }
+        //Sergio Rodríguez Mendoza
         public async Task<int> CrearPedido(CrearPedidoDto dto)
         {
             //valida el stock 
@@ -39,12 +40,15 @@ namespace Back.Services
             await _context.SaveChangesAsync();
 
             decimal totalVenta = 0;
+            //Crear detalles / restar stock y calcular total
             foreach(var det in dto.Detalles)
             {
                 var producto = await _context.productos.FirstOrDefaultAsync(p => p.IdProducto == det.IdProducto);
                 var inventario = await _context.inventario.FirstOrDefaultAsync(i => i.IdProducto == det.IdProducto);
 
                 decimal precio = producto.Precio;
+
+                decimal subtotal = precio * det.Cantidad;
                     
             }
         
