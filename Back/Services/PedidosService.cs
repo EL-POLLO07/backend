@@ -49,10 +49,46 @@ namespace Back.Services
                 decimal precio = producto.Precio;
 
                 decimal subtotal = precio * det.Cantidad;
+                totalVenta += subtotal;
+
+                var detalle = new DetalleVenta
+                {
+                    IdVenta = venta.IdVenta,
+                    IdProducto = det.IdProducto,
+                    Cantidad = det.Cantidad,
+                    Subtotal = subtotal
+                };
+                _context.Detalle.Add(detalle);
+
+                inventario.Cantidad -= det.Cantidad;
                     
             }
-        
+            venta.Total = totalVenta;
+            await _context.SaveChangesAsync();
+
+            return venta.IdVenta;
         }
+
+        //Sergio Rodríguez Mendoza
+        public async Task RegistrarPago(CrearPagoDto dto)
+        {
+            var venta = await _context.ventas.FindAsync(dto.IdVenta);
+            if (venta == null)
+                throw new Exception("El pedido no existe");
+
+            var pago = new Pagos
+            {
+                IdVenta = dto.IdVenta,
+                Monto = dto.Monto,
+                Fecha  = DateTime.Now
+            };
+            _context.pagos.Add(pago);
+            venta.Estado = "Pagado";
+
+            await _context.SaveChangesAsync();
+        }
+
+
         //Saul Alvarado//
         public async Task<bool> MarcarRecoleccion(int id)
         {
@@ -68,6 +104,7 @@ namespace Back.Services
             await _context.SaveChangesAsync();
             return true;
         }
+
         //Saul Alvarado//
         public async Task<bool> ConfirmarEntrega(int id)
         {
