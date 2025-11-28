@@ -49,6 +49,33 @@ namespace Back.Services
             }
         
         }
+        //Saul Alvarado//
+        public async Task<bool> MarcarRecoleccion(int id)
+        {
+            var venta = await _context.ventas.FindAsync(id);
+
+            if (venta == null)
+                throw new Exception("Pedido no existe");
+
+            if (venta.Estado != "Pedido")
+                throw new Exception("El pedido no está en etapa de Pedido");
+
+            venta.Estado = "Recolectado";
+            await _context.SaveChangesAsync();
+            return true;
+        }
+        //Saul Alvarado//
+        public async Task<bool> ConfirmarEntrega(int id)
+        {
+            var venta = await _context.ventas.FindAsync(id);
+            if (venta == null)
+                throw new Exception("Pedido no encontrado");
+            if (venta.Estado != "Pagado")
+                throw new Exception("El pedido aún no está pagado");
+            venta.Estado = "Entregado";
+            await  _context.SaveChangesAsync();
+            return true;
+        }
 
     }
 }
