@@ -75,6 +75,8 @@ namespace Back.Services
             var venta = await _context.ventas.FindAsync(dto.IdVenta);
             if (venta == null)
                 throw new Exception("El pedido no existe");
+            if (venta.Estado != "Recolectado")
+                throw new Exception("El pedido aún no ha sido recolectado");
 
             var pago = new Pagos
             {
@@ -117,6 +119,7 @@ namespace Back.Services
             await  _context.SaveChangesAsync();
             return true;
         }
+      
 
     }
 }

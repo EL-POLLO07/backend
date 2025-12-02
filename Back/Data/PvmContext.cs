@@ -19,7 +19,7 @@ namespace Back.Data
         public DbSet<Ventas> ventas { get; set; }
         public DbSet<Usuarios> usuarios { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlServer("Server=PC-DE-SERGIO\\SQLEXPRESS; Database= Base_de_datos; Trusted_Connection = True; User= sa; Password=Pejetronix420; TrustServerCertificate= True ");
+        protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlServer("Server=DESKTOP-EL6M7BM\\SQLEXPRESS; Database= Base_de_datos; Trusted_Connection = True; User= sa; Password=Pejetronix420$; TrustServerCertificate= True ");
 
         //Sergio Rodríguez Mendoza
         protected override void OnModelCreating(ModelBuilder modelBuilder)

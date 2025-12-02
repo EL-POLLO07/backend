@@ -22,7 +22,7 @@ namespace Back.Controllers
             var resultado = await _service.CrearPedido(dto);
             return Ok(resultado);
         }
-        [HttpPut("{id}/recoleccion")]
+        [HttpPut("recoleccion/{id}")]
         public async Task<IActionResult> ConfirmarRecoleccion(int id, [FromBody] ConfirmarRecoleccionDto dto)
         {
             var resultado = await _service.ConfirmarRecoleccion(id, dto);
@@ -37,12 +37,13 @@ namespace Back.Controllers
         }
 
 
-        [HttpPut("{id}/entregas")]
+        [HttpPut("entregas/{id}")]
         public async Task<IActionResult> Entregado(int id, [FromBody] EntregadoDto dto)
         {
             var resultado = await _service.ConfirmarEntrega(id, dto);
 
             return Ok(resultado);
         }
+      
     }
 }
