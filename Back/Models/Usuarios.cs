@@ -13,9 +13,7 @@ namespace Back.Models
         public string ContraseñaHash { get; set; }
         public string Rol {  get; set; }
         public DateTime? FechaRegistro { get => fecha; set => fecha = value; }
-        [ForeignKey("Empleados")]
-        public int IdEmpleado { get; set; }
-        public Empleados? Empleado { get; set; }
+       
 
     }
 }

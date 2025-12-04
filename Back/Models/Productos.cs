@@ -16,7 +16,6 @@ namespace Back.Models//SERGIO RODRIGUEZ MENDOZA
         public Proveedores? Proveedor { get; set; }
         public string Nombre { get; set; }
         public decimal Precio { get; set; }
-        public int Stock { get; set; }
         public ICollection<Inventario>? Inventarios { get; set; }
         public ICollection<DetalleVenta>? DetallesVenta { get; set; }
 
